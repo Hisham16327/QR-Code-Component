@@ -1,0 +1,72 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsl(212, 45%, 89%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* QR Code Container */
+
+main {
+  width: 20em;
+  height: 32em;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: white;
+  border-radius: 1em;
+  filter: drop-shadow(0em 0em 1em rgb(197, 197, 197));
+}
+
+/* Text */
+
+.text {
+  font-family: "Outfit", sans-serif;
+  text-align: center;
+}
+
+.text > h2 {
+  font-weight: 700;
+  color: hsl(218, 44%, 22%);
+  margin: 20px 0px;
+}
+
+.text > p {
+  font-weight: 400;
+  font-size: 15px;
+  color: hsl(220, 15%, 55%);
+  margin: 15px;
+}
+
+/* QR Image */
+
+img {
+  display: flex;
+  width: 18em;
+  height: 18em;
+  border-radius: 1em;
+}
+
+.attribution {
+  margin-top: 25px;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
